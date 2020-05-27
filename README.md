@@ -11,22 +11,22 @@ type zones and other information.
 
 ## Features ##
 
-   *Type of covid zone
+   * Type of covid zone
    
-   *City, District, State data
+   * City, District, State data
    
-   *Related guidlines
+   * Related guidlines
    
-    *compares user's past location with current
+    * compares user's past location with current
 
 
 ## Tech / API's Used ##
  
-          *Bing Maps api (reverse geocoding)
-          *Google geocharts
-          *covid19india api (covid-19 data)
-          *cloudflare SSL (browsers support geolocation only in HTTPS)
-          *W3CSS
+ * Bing Maps api (reverse geocoding)
+ * Google geocharts
+ * covid19india api (covid-19 data)
+ * cloudflare SSL (browsers support geolocation only in HTTPS)
+ * W3CSS
 
 
 ## Screenshots ##
