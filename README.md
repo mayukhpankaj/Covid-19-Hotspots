@@ -1,4 +1,4 @@
-# Covid-19-Hotspots
+# Covid-19-Hotspots #
 
 Repository for [www.covidhotspots.live](https://covidhotspots.live/)
 
@@ -10,7 +10,7 @@ It requests user location, reverse geocode, lookup the district name in datasets
 type zones and other information.
 ---
 
-## Features 
+## Features ##
 
    *Type of covid zone
    *City, District, State data
@@ -18,7 +18,7 @@ type zones and other information.
     *compares user's past location with current
 ---
 
-## Tech / API's Used
+## Tech / API's Used ##
  
    *Bing Maps api (reverse geocoding)
    *Google geocharts
@@ -27,7 +27,7 @@ type zones and other information.
    *W3CSS
 ---
 
-##Screenshots
+##Screenshots ##
 
 
    
