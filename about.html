@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>covid hotspots</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./W3.CSS Template_files/w3.css">
+<link rel="stylesheet" href="./W3.CSS Template_files/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('./desktopbg.jpg');
+  min-height: 100%;
+  background-position: center;
+   background-repeat:  repeat;
+  background-size: cover;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #00264d;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+ p.monospace {margin-left: 1em;
+  font-family: "courier new";
+  font-size: 12px;
+ }
+
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="topnav">
+  <center><a  href="./result.html">COVID HOTSPOTs.live</a><center>
+</div>
+  <br>
+  <br>
+  <center><h3>About</h3></center>
+  
+      <center><p> Developed by Mayukh Pankaj, first year student, <br>Indian Institute of Information Technology Trichy.</center></p>
+      <br>
+      <p class="monospace">
+      This app identify the type of zone, it's guidelines, number of cases, in user's location. In May, MoHFW ( Ministry of Health & Family Welfare) classified districts into Red, Orange, Green zones depending on extent of contamination. This app requests user location, reverse geocode, lookup the district in datasets and provides the type zones and other information. It was fun making it in lockdown, learned a lot about geocoding.<br>
+         It also compares last stored geo coordinates in local storage with current to check whether user is following the guidelines layed in their Zone. Example: if distance between the coordinates is much greater than allowed in red zone say 20kms, user is warned. <br>
+         
+         some helpful assets:
+         <ul>
+             <li>Bing Maps api</li>
+             <li>Google geocharts</li>
+             <li>covid19india api</li>
+             <li><a href="https://github.com/mayukhpankaj/Covid-19-Hotspots">Github repo</a></li>
+             
+         </ul>
+         
+      <br>
+      
+      
+      
+  </p>
+  
+</body>
+</html>

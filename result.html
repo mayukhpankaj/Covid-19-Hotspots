@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>covid hotspots</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('./desktopbg.jpg');
+   background-repeat:  repeat;
+  background-position: center;
+ 
+  background-size: cover;
+  min-height: 100%;
+}
+body {background-color: #00264d;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #00264d;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00264d;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+p span{
+    
+    display: block;
+}
+
+</style>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+<script>
+    clat = parseFloat(sessionStorage.getItem("lat"));
+    clon = parseFloat(sessionStorage.getItem("lon"));
+      
+</script>
+
+
+<script>
+     google.charts.load('current', {
+       'packages': ['geochart'],
+
+       'mapsApiKey': 'AIzaSyCLA5Lyup9e-wSJ3Ng9sxFgxySMpUNwabA'
+     });
+     google.charts.setOnLoadCallback(drawMarkersMap);
+
+      function drawMarkersMap() {
+      var data = google.visualization.arrayToDataTable([
+        ['lat',   'lon','color','size'],
+        [clat, clon,1,6],
+      
+      ]);
+      
+       console.log(clat);
+       console.log(clon);
+
+      var options = {
+        region: 'IN',
+        displayMode: 'markers',
+        backgroundColor: '#00264d',
+        datalessRegionColor: '#e6f2ff',
+        defaultColor: '#0099ff',
+        sizeAxis: {minSize:1,  maxSize: 4}
+      };
+
+      var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    };
+    
+   
+   
+
+    
+    
+    
+</script>
+
+
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  
+  <div class="topnav">
+  <center><a  href="#home">COVID HOTSPOTs.live</a><center></div>
+
+  <br>
+ <div><center>
+  <h2><p id="msg1"></p></h2>
+  </center>
+  </div>
+
+  <br>
+  <br>
+
+  
+     
+    <div class="container">
+         <div class="w3-display-middle">
+            
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+
+     <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+
+         <p class="w3-large">Detected Location: </p><div id='printoutPanel'></div>
+         
+         <div id="chart_div" style="width: 320px; height: 220px;"></div>
+        
+      </div>
+      
+      <div class="item">
+           
+           <center><div id="distdata"></div></center>
+           <br>
+  <table class="table">
+ <tr>
+   <th><div style="color:#ffa31a;">Confirmed</div></th>
+   <th><div style="color:#ff1a1a;">Active</div></th>
+   <th><div style="color:#99ff33;">Recovered</div></th>
+   <th><div style="color:#b3b3b3;">Death</div></th>
+ </tr>
+ <tr>
+  <td><div id="cd"></div></td>
+  <td><div id="ad"></div></td>
+  <td><div id="rd"></div></td>
+  <td><div id="dd"></div></td>
+ </tr>
+
+ </table>
+</div>
+
+    <div class="item">
+      
+
+
+<table class="table table-condensed" id="table">
+ <tr>
+   <th>District</th>
+   <th><div style="color:#ffa31a;">Confirmed</div></th>
+   <th><div style="color:#ff1a1a;">Active</div></th>
+   <th><div style="color:#99ff33;">Recovered</div></th>
+   <th><div style="color:#b3b3b3;">Death</div></th>
+ </tr>
+
+
+</table>
+     </div>
+     
+     <div class="item">
+         
+         <center><div id="zonenos"></div></center>
+
+
+    <span style="color:red;">Red zones</span>
+    <p id="rl" style="color:red;"></p>
+     <br>
+  <span style="color:orange;">Orange zones</span>
+  <br>
+    <p id="ol" style="color:orange;"></p>
+    <br>
+
+ 
+  <span style="color:Green;">Green zones</span>
+    <p id="gl" style="color:Green;"></p>
+ 
+         
+     </div>
+     
+      <div class="item">
+          <center><h5><div id="guidezone"></div></h5>  <br></center>
+         <p id="guide"></p>
+      </div>
+      
+      
+
+       <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+    
+   
+   
+   </div>
+   
+  <div class="w3-display-bottomleft w3-padding-large w3-large">
+      <div id='myMap' style='width:1vw; height:1vh;'></div>
+  by <a href="./about.html" target="_blank">Mayukh</a> 🇮🇳
+  
+  </div>
+ 
+  <div class="loader-wrapper">
+  
+      <span class="loader"></span>
+      
+      <br>
+       <div class="w3-display-position" style="top: 60vh;left:10wh"><div id="loadtext">Getting geo coordinates.</div></div>
+  </div>
+  
+ <script type="text/javascript" src="result.js"></script>
+ <script language="javascript">
+       main();
+</script>
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AhwT4-MdaboX-XaoAc6-ZunQQv0hbUOzw_nu9XUniQ-1844Q7-ZE61nE0cB3vOPC&callback=loadMapScenario' async defer></script>
+
+
+</body>
+</html>
