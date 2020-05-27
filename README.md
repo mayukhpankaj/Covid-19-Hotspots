@@ -12,11 +12,8 @@ type zones and other information.
 ## Features ##
 
    * Type of covid zone
-   
    * City, District, State data
-   
    * Related guidlines
-   
     * compares user's past location with current
 
 
