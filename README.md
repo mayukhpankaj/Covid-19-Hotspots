@@ -12,8 +12,8 @@ It requests user location, reverse geocode, lookup the district name in datasets
 
    * Type of covid zone
    * City, District, State data
-   * Related guidlines
-     * compares user's past location with current
+   * Related guidelines
+     * compares user's past location with current 
 
 
 ## Tech / API's Used ##
