@@ -8,7 +8,6 @@ Health & Family Welfare) classified districts into Red, Orange, Green zones.
 
 It requests user location, reverse geocode, lookup the district name in datasets and shows the 
 type zones and other information.
----
 
 ## Features ##
 
@@ -16,7 +15,7 @@ type zones and other information.
    *City, District, State data
    *Related guidlines
     *compares user's past location with current
----
+
 
 ## Tech / API's Used ##
  
@@ -25,7 +24,7 @@ type zones and other information.
    *covid19india api (covid-19 data)
    *cloudflare SSL (browsers support geolocation only in HTTPS)
    *W3CSS
----
+
 
 ##Screenshots ##
 
