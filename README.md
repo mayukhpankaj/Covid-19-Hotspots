@@ -12,14 +12,17 @@ type zones and other information.
 ## Features ##
 
    *Type of covid zone
+   
    *City, District, State data
+   
    *Related guidlines
+   
     *compares user's past location with current
 
 
 ## Tech / API's Used ##
  
-Markup :  *Bing Maps api (reverse geocoding)
+          *Bing Maps api (reverse geocoding)
           *Google geocharts
           *covid19india api (covid-19 data)
           *cloudflare SSL (browsers support geolocation only in HTTPS)
