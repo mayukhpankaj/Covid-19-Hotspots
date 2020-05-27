@@ -19,14 +19,14 @@ type zones and other information.
 
 ## Tech / API's Used ##
  
-   *Bing Maps api (reverse geocoding)
-   *Google geocharts
-   *covid19india api (covid-19 data)
-   *cloudflare SSL (browsers support geolocation only in HTTPS)
-   *W3CSS
+Markup :  *Bing Maps api (reverse geocoding)
+          *Google geocharts
+          *covid19india api (covid-19 data)
+          *cloudflare SSL (browsers support geolocation only in HTTPS)
+          *W3CSS
 
 
-##Screenshots ##
+## Screenshots ##
 
 
    
