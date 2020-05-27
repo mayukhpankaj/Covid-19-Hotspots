@@ -6,15 +6,14 @@ This web application uses geolocation to identify the type of covid zone, show c
 data in user's location  and give related updates on guidelines . In May, MoHFW( Ministry of 
 Health & Family Welfare) classified districts into Red, Orange, Green zones.
 
-It requests user location, reverse geocode, lookup the district name in datasets and shows the 
-type zones and other information.
+It requests user location, reverse geocode, lookup the district name in datasets and shows information.
 
 ## Features ##
 
    * Type of covid zone
    * City, District, State data
    * Related guidlines
-    * compares user's past location with current
+     * compares user's past location with current
 
 
 ## Tech / API's Used ##
