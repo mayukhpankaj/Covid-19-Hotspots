@@ -1,6 +1,6 @@
 # Covid-19-Hotspots #
 
-Repository of [www.covidhotspots.live](https://covidhotspots.live/)
+[www.covidhotspots.live](https://covidhotspots.live/)
 
 This web application uses geolocation to identify the type of covid zone, show covid-19 case 
 data in user's location  and give related updates on guidelines . In May, MoHFW( Ministry of 
