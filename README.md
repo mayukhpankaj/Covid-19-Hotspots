@@ -8,8 +8,6 @@ Health & Family Welfare) classified districts into Red, Orange, Green zones.
 
 It requests user location, reverse geocode, lookup the district name in datasets and shows information.
 
-**For now maintained only for India.
-
 ## Features ##
 
    * Type of covid zone
