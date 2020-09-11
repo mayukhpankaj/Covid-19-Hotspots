@@ -2,8 +2,10 @@
 
 [www.covidhotspots.live](https://covidhotspots.live/)
 
+[Video](https://www.youtube.com/watch?v=SRDPqw_Ob94)
+
 This web application uses geolocation to identify the type of covid zone, show covid-19 case 
-data in user's location  and give related updates on guidelines . In May, MoHFW( Ministry of 
+data in user's location  and give related updates on guidelines . In May, Gov of India, MoHFW( Ministry of 
 Health & Family Welfare) classified districts into Red, Orange, Green zones.
 
 It requests user location, reverse geocode, lookup the district name in datasets and shows information.
@@ -14,6 +16,7 @@ It requests user location, reverse geocode, lookup the district name in datasets
    * City, District, State data
    * Related guidelines
      * compares user's past location with current 
+   * Currently only works for India.  
 
 
 ## Tech / API's Used ##
