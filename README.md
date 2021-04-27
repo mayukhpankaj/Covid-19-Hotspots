@@ -34,8 +34,6 @@ It requests user location, reverse geocode, lookup the district name in datasets
 
 ![preview img](https://i.imgur.com/8xLLTgD.gif)
 
-![image](https://i.imgur.com/uh49csT.jpg)
-
    
    
    
