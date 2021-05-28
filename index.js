@@ -46,7 +46,7 @@ userPositionPromise
     console.log(sessionStorage.getItem("lon"));
     
     console.log('redirecting');
-    window.location = "https://covidhotspots.live/result.html";
+    window.location = "./result.html";
     
     
   })
